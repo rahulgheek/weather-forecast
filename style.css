@@ -115,7 +115,7 @@ nav img:hover{
         background-color: rgba(255,255,255,.1);
         height: auto;
         width:132px;
-        display: block;
+        display: none;
     }
     nav ul li a{
         font-size: 12px;
@@ -525,6 +525,9 @@ button.btn:hover{
     font-size: 2vmax;
     padding-bottom: 10px;
 }
+.addheading span{
+    font-size: 2vmax;
+}
 .reviewbox .star{
     gap: 2vw;
     font-size: 30px;
@@ -554,7 +557,7 @@ button.btn:hover{
 }
 @media (max-width:1020px){
     .weather-section{
-        height: 220vh;
+        height: 190vh;
     }
     .template{
         height: 158vh;
@@ -580,7 +583,7 @@ button.btn:hover{
 
 @media (max-width:800px) {
     .template{
-        height: 198vh;
+        height: 178vh;
     }
     .box{
         height: 60vh;
@@ -616,6 +619,9 @@ button.btn:hover{
     .reviewbox h2{
         font-size: 6vw;
     }
+    .addheading span{
+        font-size: 3vmax;
+    }
 }
 
 @media (max-width:400px) {
@@ -646,6 +652,15 @@ button.btn:hover{
     .forecast{
         display: grid;
         grid-template-columns: 14vmax 14vmax;
+    }
+    .about p{
+        font-size: 15px;;
+    }
+    .reviewpage{
+        height: 120vh;
+    }
+    .reviewpage p{
+        font-size: 2vmax;
     }
 }
 
@@ -708,6 +723,7 @@ button.btn:hover{
 .ourstory .info p{
     font-size: 1em;
     padding-top: 20px;
+    text-align: left;
 }
 .ourstory .info ul{
     padding-top: 20px;
@@ -761,13 +777,13 @@ button.btn:hover{
     gap:10vw;
 }
 .feature .featurebox{
-    width: 33vw;
+    width: 35vw;
     padding: 1vw;
     height:250px;
     background-color: white;
     border-radius: 10px;
     color:black;
-    box-shadow: 4px 4px 5px black;
+    box-shadow: -2px -2px 5px rgb(0, 0, 0);
 }
 .featurebox p{
     font-size: 0.7em;
@@ -782,7 +798,7 @@ button.btn:hover{
     border: none;
     transition: 0.5s;
     border-radius: 9px;
-    font-size: 1.78vmin;
+    font-size: 1.78vmax;
 }
 .featurebox .btna a{
     transition: 0.5s;
@@ -836,7 +852,7 @@ button.btn:hover{
         flex-direction: column;
     }
     .ourstory .info{
-        width: 50vw;
+        width: 70vw;
         text-align: center;
     }
     .ourstory .info:nth-child(2){
@@ -845,7 +861,10 @@ button.btn:hover{
     .feature .featurebox{
         height: 150px;
     }
-    
+    .featurebox p{
+        font-size: 0.76em;
+        font-weight: 700;
+    }
 }
 
 @media (max-width:600px) {
@@ -861,12 +880,18 @@ button.btn:hover{
     .feature .featurebox{
         width: 120%;
         position: sticky;
-        top:60vh;
+        top:50vh;
     }
     .feature{
         position: sticky;
         top: 65vh;
         margin-top: 50px;
+    }
+    .ourstory .info p{
+        font-size: 1.25em;
+    }
+    .ourstory .info ul li{
+        font-size: 1.25em;
     }
 }
 
@@ -1223,7 +1248,7 @@ footer .menu .icons i:hover{
     font-size: 2vmax;
 }
 .menuc input[type="text"]{
-    width: 350px;
+    width: 300px;
     font-size: 15px;
     border-radius: 5px;
     padding: 0 5px;
@@ -1315,4 +1340,23 @@ footer .hr ul li a{
         background-position-x: 1000px;
     }
 }
- 
+
+@media (max-width:800px) {
+    footer{
+        display: block;
+    }
+    footer .menub,footer .menuc{
+        margin-top: 30px;
+    }
+
+    footer .hr{
+        flex-direction: column;
+        height: 60px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width:400px) {
+    footer .menu{
+        transform: translateX(-25vw);
+    }
+}
